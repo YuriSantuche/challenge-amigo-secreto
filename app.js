@@ -9,7 +9,7 @@ function adicionarAmigo(){
     }
     else{
         amigos.push(caixaComNomes.value);
-        nomesAdicionados.innerHTML += (`${caixaComNomes.value} `);
+        nomesAdicionados.innerHTML += (`<br> ${caixaComNomes.value}`);
         caixaComNomes.value = '';
     }
 }
@@ -22,8 +22,10 @@ function sortearAmigo(){
     else{
         let indiceAleatorio = Math.floor(Math.random()*amigos.length);
         let nomeSorteado = amigos[indiceAleatorio];
-        console.log(nomeSorteado);
-        nomesAdicionados.innerText = `O Sorteado foi ${nomeSorteado}`;
+        nomesAdicionados.style.color = "green";
+        nomesAdicionados.innerHTML = (`<strong><br> O amigo secreto é: ${nomeSorteado}</strong>`);
+        document.getElementById('botaoAdicionar').setAttribute('disabled',true);
+        document.getElementById('botaoAdicionar').style.backgroundColor = 'grey';
 
     }
 }
