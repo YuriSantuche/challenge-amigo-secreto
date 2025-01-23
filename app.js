@@ -26,7 +26,6 @@ function sortearAmigo(){
         nomesAdicionados.innerHTML = (`<strong><br> O amigo secreto é: ${nomeSorteado}</strong>`);
         document.getElementById('botaoAdicionar').setAttribute('disabled',true);
         document.getElementById('botaoAdicionar').style.backgroundColor = 'grey';
-
     }
 }
 
