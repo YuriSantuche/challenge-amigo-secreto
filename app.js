@@ -35,5 +35,3 @@ function resetarJogo() {
   document.getElementById("botaoAdicionar").style.backgroundColor = "orange";
   nomesAdicionados.style.color = "black";
 }
-
-//Nova funcionalidade, botao para resetar sorteio e alteração no tamanho e cor da fonte 
