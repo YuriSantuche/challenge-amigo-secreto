@@ -22,8 +22,10 @@
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
                 <button class="button-add" id="botaoAdicionar" style="background-color: rgb(230, 160, 9);" onclick="adicionarAmigo()">Adicionar</button>
+                
+                <button id="botaoReset" style="margin: 0 15px;" onclick="resetarJogo()">Resetar Sorteio </button>
             </div>
-            <p id="nomesAdicionados"></p>
+            <p id="nomesAdicionados" class="nomesNaPagina"></p>
            
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
             <ul id="resultado" class="result-list" aria-live="polite"></ul>

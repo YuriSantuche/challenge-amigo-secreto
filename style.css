@@ -61,6 +61,13 @@ body {
     color: var(--color-white);
 }
 
+.nomesNaPagina{
+    font-family: "Merriweather";
+    font-size: 17px; 
+    font-weight: 700;
+ }
+ 
+
 .section-title {
     font-family: "Inter", serif;
     font-size: 36px;
